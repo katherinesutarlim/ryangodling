@@ -1,82 +1,82 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const CopypastaForm = () => {
-    const correctAnswers = {
-        word1: 'Ken',
-        word2: 'ride',
-        word3: 'Jump',
-        word4: 'plastic',
-        word5: 'undress',
-        word6: 'life',
-        word7: 'bimbo',
-        word8: 'glamor',
-        word9: 'hanky-panky',
-        word10: 'touch',
-        word11: 'Imagination',
-        word12: 'walk',
-        word13: 'talk',
-        word14: 'star',
-        word15: 'town',
-        word16: 'Barbie',
-        word17: 'Come',
-        word18: 'Life',
-        word19: 'creation',
-        word20: 'fantastic',
-        word21: 'yeah',
-        word22: 'party',
-        word23: 'fun',
-        word24: 'started',
-        word25: 'love',
-    };
+  const correctAnswers = {
+    word1: 'Ken',
+    word2: 'ride',
+    word3: 'Jump',
+    word4: 'plastic',
+    word5: 'undress',
+    word6: 'life',
+    word7: 'bimbo',
+    word8: 'glamor',
+    word9: 'hanky-panky',
+    word10: 'touch',
+    word11: 'Imagination',
+    word12: 'walk',
+    word13: 'talk',
+    word14: 'star',
+    word15: 'town',
+    word16: 'Barbie',
+    word17: 'Come',
+    word18: 'Life',
+    word19: 'creation',
+    word20: 'fantastic',
+    word21: 'yeah',
+    word22: 'party',
+    word23: 'fun',
+    word24: 'started',
+    word25: 'love'
+  }
 
-    // Define the initial state for the input fields
-    const [inputs, setInputs] = useState({
-        word1: '',
-        word2: '',
-        word3: '',
-        word4: '',
-        word5: '',
-        word6: '',
-        word7: '',
-        word8: '',
-        word9: '',
-        word10: '',
-        word11: '',
-        word12: '',
-        word13: '',
-        word14: '',
-        word15: '',
-        word16: '',
-        word17: '',
-        word18: '',
-        word19: '',
-        word20: '',
-        word21: '',
-        word22: '',
-        word23: '',
-        word24: '',
-        word25: '',
-    });
+  // Define the initial state for the input fields
+  const [inputs, setInputs] = useState({
+    word1: '',
+    word2: '',
+    word3: '',
+    word4: '',
+    word5: '',
+    word6: '',
+    word7: '',
+    word8: '',
+    word9: '',
+    word10: '',
+    word11: '',
+    word12: '',
+    word13: '',
+    word14: '',
+    word15: '',
+    word16: '',
+    word17: '',
+    word18: '',
+    word19: '',
+    word20: '',
+    word21: '',
+    word22: '',
+    word23: '',
+    word24: '',
+    word25: ''
+  })
 
-    const [results, setResults] = useState(null);
+  const [results, setResults] = useState(null)
 
-    // Handle input change
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setInputs(prevInputs => ({ ...prevInputs, [name]: value }));
-    };
+  // Handle input change
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setInputs(prevInputs => ({ ...prevInputs, [name]: value }))
+  }
 
-    const handleSubmit = () => {
-        const answerResults = Object.keys(correctAnswers).map(key => {
-            return {
-                word: key,
-                correct: inputs[key]?.toLowerCase() === correctAnswers[key].toLowerCase()
-            };
-        });
-        setResults(answerResults);
-    };
+  const handleSubmit = () => {
+    const answerResults = Object.keys(correctAnswers).map(key => {
+      return {
+        word: key,
+        correct: inputs[key]?.toLowerCase() === correctAnswers[key].toLowerCase()
+      }
+    })
+    setResults(answerResults)
+  }
 
-    return (
+  return (
         <div>
             <p>
                 Hiya, Barbie<br/>
@@ -170,7 +170,7 @@ const CopypastaForm = () => {
                 </div>
             )}
         </div>
-    );
-};
+  )
+}
 
-export default CopypastaForm;
+export default CopypastaForm
