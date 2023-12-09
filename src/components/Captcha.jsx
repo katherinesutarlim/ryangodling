@@ -28,7 +28,7 @@ const Captcha = () => {
   }
 
   const checkSelection = () => {
-    if (selectedImages.length === 0) {
+    if (selectedImages.length !== 4) {
       window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
     }
     selectedImages.forEach((image) => {
