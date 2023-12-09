@@ -40,7 +40,7 @@ const Captcha = () => {
       }
     })
 
-    correct ? window.location.replace('/flying-gosling') : window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+    correct ? navigate('/flying-gosling') : window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
   }
 
   const [imageOrder, setImageOrder] = React.useState([
