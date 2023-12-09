@@ -30,7 +30,7 @@ const Rickroll = () => {
   }
 
   return (
-        <div>
+        <div id="rickroll">
             {[...Array(totalLinks).keys()].map(linkId => (
                 <button className='link-button' key={linkId} onClick={() => handleLinkClick(linkId)}>
                 </button>

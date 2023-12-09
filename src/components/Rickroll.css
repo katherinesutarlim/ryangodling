@@ -13,7 +13,7 @@
     background-size: 200%;
 }
 
-div {
+#rickroll {
     display: flex;
     flex-direction: column;
     align-items: center;

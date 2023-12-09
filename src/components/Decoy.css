@@ -1,0 +1,16 @@
+button {
+  color: white;
+  font-size: larger;
+  background-color: transparent;
+  border: none;
+}
+  
+#hero-image {
+  background-image: url(../assets/hero-image.png);
+  background-size: cover;
+  height: 100vh;
+}
+  
+#text-body {
+  margin: 40px 20px;
+}

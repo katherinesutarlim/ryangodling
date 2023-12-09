@@ -1,3 +1,4 @@
+import './Decoy.css'
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router'
 import Popup from './Popup'
@@ -65,9 +66,8 @@ const Decoy = () => {
     <>
       <Popup isOpen={isPopupOpen} onClose={() => subscribe()}>
       </Popup>
-      <Menu id="menu">
+      <Menu>
       </Menu>
-      {/* <img src="https://ychef.files.bbci.co.uk/1280x720/p0g20fkv.jpg" width='100%' height='auto'></img> */}
       <div id='hero-image'>
         <div style={{ position: 'absolute', bottom: '0', padding: '20px 20px' }}>
           <h1 style={{ fontSize: '80px', textShadow: '4px 4px 4px #888888', margin: '20px 0px' }}>Ryan Gosling</h1>

@@ -28,15 +28,17 @@ const Captcha = () => {
   }
 
   const checkSelection = () => {
+    let correct = true
     if (selectedImages.length !== 4) {
-      window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+      correct = false
     }
     selectedImages.forEach((image) => {
       if (!image.includes('liam')) {
-        window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+        correct = false
       }
     })
-    window.location.replace('/flying-gosling')
+
+    correct ? window.location.replace('/flying-gosling') : window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
   }
 
   const [imageOrder, setImageOrder] = React.useState([
@@ -63,6 +65,7 @@ const Captcha = () => {
   return (
     <>
     <div className="captcha-container">
+      <h2 style={{ color: 'black' }} >Are you a robot?</h2>
       <h2 style={{ color: 'black' }} >Select all images of Liam Hemsworth:</h2>
       <div className="image-grid">
         {imageOrder.map((image) => (
