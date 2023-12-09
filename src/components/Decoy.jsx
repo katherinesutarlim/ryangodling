@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router'
+import { Route, Routes, useLocation } from 'react-router'
 import Popup from './Popup'
 import Menu from './Menu'
 import Homepage from './Homepage'
@@ -9,18 +9,28 @@ import Footer from './Footer'
 
 const Decoy = () => {
   const [isPopupOpen, setPopupOpen] = React.useState(true)
-  // const location = useLocation()
+  const location = useLocation()
 
   const scrollToBody = () => {
-    document.getElementById('text-body').scrollIntoView({ behavior: 'smooth' })
-  }
+    const targetElement = document.getElementById('text-body')
 
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: 'smooth' // Add smooth scrolling behavior for a smoother transition
-  //   })
-  // }
+    if (targetElement) {
+      const bodyRect = document.body.getBoundingClientRect().top
+      const elementRect = targetElement.getBoundingClientRect().top
+      const offsetPosition = elementRect - bodyRect - 30
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Add smooth scrolling behavior for a smoother transition
+    })
+  }
 
   const subscribe = () => {
     setPopupOpen(false)
@@ -40,22 +50,22 @@ const Decoy = () => {
     checkSubscribed()
   }, [])
 
-  // React.useEffect(() => {
-  //   checkSubscribed()
-  //   const url = window.location.href
+  React.useEffect(() => {
+    checkSubscribed()
+    const url = window.location.href
 
-  //   if (url.includes('about') || url.includes('daily')) {
-  //     scrollToBody()
-  //   } else {
-  //     scrollToTop()
-  //   }
-  // }, [location])
+    if (url.includes('about') || url.includes('daily')) {
+      scrollToBody()
+    } else {
+      scrollToTop()
+    }
+  }, [location])
 
   return (
     <>
       <Popup isOpen={isPopupOpen} onClose={() => subscribe()}>
       </Popup>
-      <Menu>
+      <Menu id="menu">
       </Menu>
       {/* <img src="https://ychef.files.bbci.co.uk/1280x720/p0g20fkv.jpg" width='100%' height='auto'></img> */}
       <div id='hero-image'>
