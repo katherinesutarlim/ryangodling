@@ -1,7 +1,7 @@
 // import logo from './logo.svg'
 import './App.css'
 import React from 'react'
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Decoy from './components/Decoy'
 import Captcha from './components/Captcha'
 import FlyingGoslingGame from './components/FlyingGoslingGame'
@@ -18,7 +18,7 @@ import BrowserCheck from './components/BrowserCheck'
 function App () {
   return (
     <>
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/browser-check" element={<BrowserCheck />}></Route>
         <Route path="/captcha" element={<Captcha />}></Route>
@@ -31,7 +31,7 @@ function App () {
         <Route path="/dating" element={<DatingSim />}></Route>
         <Route path='/*' element={<Decoy />}></Route>
       </Routes>
-    </Router>
+    </HashRouter>
     </>
   )
 }
