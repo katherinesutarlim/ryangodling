@@ -5,7 +5,7 @@ const Footer = () => {
     <>
     <div style={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'center', gap: '1em' }}>
       <p>Hayden S. sucks 2023 © </p>
-      <p style={{ fontSize: '12px', color: '#5D3FD3' }}>Unsubscribe</p>
+      <p style={{ fontSize: '12px', color: '#551A8B' }}>Unsubscribe</p>
     </div>
     </>
   )

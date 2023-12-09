@@ -1,5 +1,5 @@
 body {
-  background-color: #9C3587;
+  background-color: #301934;
   color: white;
   scroll-behavior: smooth;
 }
@@ -15,4 +15,8 @@ button {
   background-image: url(assets/hero-image.png);
   background-size: cover;
   height: 100vh;
+}
+
+#text-body {
+  margin: 40px 20px;
 }
