@@ -66,8 +66,7 @@ const Decoy = () => {
     <>
       <Popup isOpen={isPopupOpen} onClose={() => subscribe()}>
       </Popup>
-      <Menu>
-      </Menu>
+      <Menu />
       <div id='hero-image'>
         <div style={{ position: 'absolute', bottom: '0', padding: '20px 20px' }}>
           <h1 style={{ fontSize: '80px', textShadow: '4px 4px 4px #888888', margin: '20px 0px' }}>Ryan Gosling</h1>
