@@ -167,7 +167,7 @@ const CopypastaForm = () => {
 
             {allCorrect
               ? (
-              <p>Congratulations! All answers are correct.<br/> <a href="your-link-here">You can proceed</a></p>)
+              <p>Congratulations! All answers are correct.<br/> <a href="/kenroll">You can proceed</a></p>)
               : (
                   results && <p>You have disappointed our Lord and Savior Godling.<br/> Better try again.</p>
                 )}
