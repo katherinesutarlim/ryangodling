@@ -1,0 +1,8 @@
+.amogus-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.amogus-container img {
+    margin-right: 24px;
+}
