@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import FlyingGosling from './FlyingGosling'
 import image from '../assets/ryan-gosling-celebrity-mask-removebg-preview.png'
 
@@ -12,12 +13,19 @@ const FlyingGoslingGame = () => {
     { id: 6, url: image }
   ]
   const [clickedImages, setClickedImages] = useState([])
+  const navigate = useNavigate()
 
   const handleImageClick = (id) => {
     if (!clickedImages.includes(id)) {
       setClickedImages([...clickedImages, id])
     }
   }
+
+  useEffect(() => {
+    if (clickedImages.length === images.length) {
+      navigate('/form')
+    }
+  }, [clickedImages, image.length, navigate])
 
   const isGameComplete = clickedImages.length === images.length
 
