@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 const Rickroll = () => {
-    const totalLinks = 12;
-    const [correctLink, setCorrectLink] = useState(null);
+  const totalLinks = 12
+  const [correctLink, setCorrectLink] = useState(null)
 
-    useEffect(() => {
-        setCorrectLink(Math.floor(Math.random() * totalLinks));
-    }, []);
+  useEffect(() => {
+    setCorrectLink(Math.floor(Math.random() * totalLinks))
+  }, [])
 
-    const handleLinkClick = (linkId) => {
-        if (linkId === correctLink) {
-            window.location.href = 'https://www.google.com/'; // Put the next section here. Placeholder is Google search
-        } else {
-            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Rickroll vid
-        }
-    };
+  const handleLinkClick = (linkId) => {
+    if (linkId === correctLink) {
+      window.location.href = 'https://www.google.com/' // Put the next section here. Placeholder is Google search
+    } else {
+      window.location.href = 'https://www.youtube.com/watch?v=8m24UmeyFkQ' // I'm just Ken video
+    }
+  }
 
-    return (
+  return (
         <div>
             {[...Array(totalLinks).keys()].map(linkId => (
                 <button key={linkId} onClick={() => handleLinkClick(linkId)}>
@@ -24,7 +24,7 @@ const Rickroll = () => {
                 </button>
             ))}
         </div>
-    );
-};
+  )
+}
 
-export default Rickroll;
+export default Rickroll
