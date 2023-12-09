@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './CopypastaForm.css'
 
 const CopypastaForm = () => {
   const correctAnswers = {
@@ -66,6 +67,8 @@ const CopypastaForm = () => {
     setInputs(prevInputs => ({ ...prevInputs, [name]: value }))
   }
 
+  const [allCorrect, setAllCorrect] = useState(false)
+
   const handleSubmit = () => {
     const answerResults = Object.keys(correctAnswers).map(key => {
       return {
@@ -73,11 +76,13 @@ const CopypastaForm = () => {
         correct: inputs[key]?.toLowerCase() === correctAnswers[key].toLowerCase()
       }
     })
+    const isAllCorrect = answerResults.every(result => result.correct)
+    setAllCorrect(isAllCorrect)
     setResults(answerResults)
   }
 
   return (
-        <div>
+        <div className="copypasta-form">
             <p>
                 Hiya, Barbie<br/>
                 Hi, <input type="text" name="word1" value={inputs.word1} onChange={handleChange} /><br/>
@@ -85,90 +90,87 @@ const CopypastaForm = () => {
                 Sure, Ken<br/>
                 <input type="text" name="word3" value={inputs.word3} onChange={handleChange} /> in<br/>
                 <br/>
-                I'm a Barbie girl in the Barbie world<br/>
-                Life in <input type="text" name="word4" value={inputs.word4} onChange={handleChange} />, it's fantastic<br/>
+                I&apos;m a Barbie girl in the Barbie world<br/>
+                Life in <input type="text" name="word4" value={inputs.word4} onChange={handleChange} />, it&apos;s fantastic<br/>
                 You can brush my hair, <input type="text" name="word5" value={inputs.word5} onChange={handleChange} /> me everywhere<br/>
                 Imagination, life is your creation<br/>
-                Come on, Barbie, let's go party<br/>
-                I'm a Barbie girl in the Barbie world<br/>
-                Life in plastic, it's fantastic<br/>
+                Come on, Barbie, let&apos;s go party<br/>
+                I&apos;m a Barbie girl in the Barbie world<br/>
+                Life in plastic, it&apos;s fantastic<br/>
                 You can brush my hair, undress me everywhere<br/>
                 Imagination, <input type="text" name="word6" value={inputs.word6} onChange={handleChange} /> is your creation<br/>
                 <br/>
-                I'm a blonde <input type="text" name="word7" value={inputs.word7} onChange={handleChange} /> girl in a fantasy world<br/>
-                Dress me up, make it tight, I'm your dolly<br/>
-                You're my doll, rock and roll, feel the <input type="text" name="word8" value={inputs.word8} onChange={handleChange} /> in pink<br/>
+                I&apos;m a blonde <input type="text" name="word7" value={inputs.word7} onChange={handleChange} /> girl in a fantasy world<br/>
+                Dress me up, make it tight, I&apos;m your dolly<br/>
+                You&apos;re my doll, rock and roll, feel the <input type="text" name="word8" value={inputs.word8} onChange={handleChange} /> in pink<br/>
                 Kiss me here, touch me there, <input type="text" name="word9" value={inputs.word9} onChange={handleChange} /><br/>
                 <br/>
                 You can <input type="text" name="word10" value={inputs.word10} onChange={handleChange} />, you can play<br/>
-                If you say I'm always yours, ooh woah<br/>
+                If you say I&apos;m always yours, ooh woah<br/>
                 <br/>
-                I'm a Barbie girl in the Barbie world<br/>
-                Life in plastic, it's fantastic<br/>
+                I&apos;m a Barbie girl in the Barbie world<br/>
+                Life in plastic, it&apos;s fantastic<br/>
                 You can brush my hair, undress me everywhere<br/>
                 <input type="text" name="word11" value={inputs.word11} onChange={handleChange} />, life is your creation<br/>
                 <br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ah, ah, ah, yeah<br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ooh woah, ooh woah<br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ah, ah, ah, yeah<br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ooh woah, ooh woah<br/>
                 <br/>
                 Make me <input type="text" name="word12" value={inputs.word12} onChange={handleChange} />, make me <input type="text" name="word13" value={inputs.word13} onChange={handleChange} />, do whatever you please<br/>
                 I can act like a <input type="text" name="word14" value={inputs.word14} onChange={handleChange} />, I can beg on my knees<br/>
                 Come jump in, bimbo friend, let us do it again<br/>
-                Hit the <input type="text" name="word15" value={inputs.word15} onChange={handleChange} />, fool around, let's go party<br/>
+                Hit the <input type="text" name="word15" value={inputs.word15} onChange={handleChange} />, fool around, let&apos;s go party<br/>
                 <br/>
                 You can touch, you can play<br/>
-                If you say I'm always yours<br/>
+                If you say I&apos;m always yours<br/>
                 You can touch, you can play<br/>
-                If you say I'm always yours<br/>
+                If you say I&apos;m always yours<br/>
                 <br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ah, ah, ah, yeah<br/>
-                Come on, <input type="text" name="word16" value={inputs.word16} onChange={handleChange} />, let's go party<br/>
+                Come on, <input type="text" name="word16" value={inputs.word16} onChange={handleChange} />, let&apos;s go party<br/>
                 Ooh woah, ooh woah<br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ah, ah, ah, yeah<br/>
-                <input type="text" name="word17" value={inputs.word17} onChange={handleChange} /> on, Barbie, let's go party<br/>
+                <input type="text" name="word17" value={inputs.word17} onChange={handleChange} /> on, Barbie, let&apos;s go party<br/>
                 Ooh woah, ooh woah<br/>
                 <br/>
-                I'm a Barbie girl in the Barbie world<br/>
-                <input type="text" name="word18" value={inputs.word18} onChange={handleChange} /> in plastic, it's fantastic<br/>
+                I&apos;m a Barbie girl in the Barbie world<br/>
+                <input type="text" name="word18" value={inputs.word18} onChange={handleChange} /> in plastic, it&apos;s fantastic<br/>
                 You can brush my hair, undress me everywhere<br/>
                 Imagination, life is your <input type="text" name="word19" value={inputs.word19} onChange={handleChange} /><br/>
-                I'm a Barbie girl in the Barbie world<br/>
-                Life in plastic, it's <input type="text" name="word20" value={inputs.word20} onChange={handleChange} /><br/>
+                I&apos;m a Barbie girl in the Barbie world<br/>
+                Life in plastic, it&apos;s <input type="text" name="word20" value={inputs.word20} onChange={handleChange} /><br/>
                 You can brush my hair, undress me everywhere<br/>
                 Imagination, life is your creation<br/>
                 <br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ah, ah, ah, <input type="text" name="word21" value={inputs.word21} onChange={handleChange} /><br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ooh woah, ooh woah<br/>
-                Come on, Barbie, let's go <input type="text" name="word22" value={inputs.word22} onChange={handleChange} /><br/>
+                Come on, Barbie, let&apos;s go <input type="text" name="word22" value={inputs.word22} onChange={handleChange} /><br/>
                 Ah, ah, ah, yeah<br/>
-                Come on, Barbie, let's go party<br/>
+                Come on, Barbie, let&apos;s go party<br/>
                 Ooh woah, ooh woah<br/>
                 <br/>
-                Oh, I'm having so much <input type="text" name="word23" value={inputs.word23} onChange={handleChange} /><br/>
-                Well, Barbie, we're just getting <input type="text" name="word24" value={inputs.word24} onChange={handleChange} /><br/>
+                Oh, I&apos;m having so much <input type="text" name="word23" value={inputs.word23} onChange={handleChange} /><br/>
+                Well, Barbie, we&apos;re just getting <input type="text" name="word24" value={inputs.word24} onChange={handleChange} /><br/>
                 Oh, I <input type="text" name="word25" value={inputs.word25} onChange={handleChange} /> you Ken
             </p>
             <button onClick={handleSubmit}>Submit</button>
 
-            {results && (
-                <div>
-                    {results.map(result => (
-                        <div key={result.word}>
-                            {result.word}: {result.correct ? 'Correct' : 'Incorrect'}
-                        </div>
-                    ))}
-                </div>
-            )}
+            {allCorrect
+              ? (
+              <p>Congratulations! All answers are correct.<br/> <a href="your-link-here">You can proceed</a></p>)
+              : (
+                  results && <p>You have disappointed our Lord and Savior Godling.<br/> Better try again.</p>
+                )}
         </div>
   )
 }
