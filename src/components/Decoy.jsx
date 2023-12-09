@@ -6,8 +6,6 @@ import Homepage from './Homepage'
 import About from './About'
 import DailyImages from './DailyImages'
 import Footer from './Footer'
-import SavePaul from './SavePaul'
-import Amogus from './Amogus'
 
 const Decoy = () => {
   const [isPopupOpen, setPopupOpen] = React.useState(true)
@@ -81,11 +79,9 @@ const Decoy = () => {
       </div>
       <div id="text-body">
         <Routes>
-          <Route path="/" element ={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/daily" element={<DailyImages />} />
-          <Route path="/savePaul" element={<SavePaul />} />
-          <Route path="/amoogus" element={<Amogus />} />
         </Routes>
       </div>
       <Footer>

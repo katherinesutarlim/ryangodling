@@ -12,11 +12,11 @@ const Menu = () => {
         </Link>
       </div>
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', gap: '2em' }}>
-        <Link to="/about">
+        <Link to="about">
           About Ryan Gosling (our God)
         </Link>
         <div>Ryan Gosling Prayers</div>
-        <Link to="/daily">
+        <Link to="daily">
           Daily GODling
         </Link>
       </div>

@@ -4,6 +4,12 @@ import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Decoy from './components/Decoy'
 import Captcha from './components/Captcha'
+import FlyingGoslingGame from './components/FlyingGoslingGame'
+import CopypastaForm from './components/CopypastaForm'
+import SavePaul from './components/SavePaul'
+import Amogus from './components/Amogus'
+// import Map from './components/Map'
+// import Rickroll from './components/Rickroll'
 
 // https://r4.wallpaperflare.com/wallpaper/458/677/100/blade-runner-blade-runner-2049-cyberpunk-ryan-gosling-movies-hd-wallpaper-6a1327b9d7a2c86edd68674ed8239c54.jpg
 
@@ -13,9 +19,14 @@ function App () {
     <Router>
       <Routes>
         <Route path="/captcha" element={<Captcha />}></Route>
+        <Route path="/form" element={<CopypastaForm />}></Route>
+        <Route path="/flying-gosling" element={<FlyingGoslingGame />}></Route>
+        <Route path="/save-paul" element={<SavePaul />}></Route>
+        <Route path="/amoogus" element={<Amogus />}></Route>
+        {/* <Route path="/impostor" element={<Map />}></Route> */}
+        {/* <Route path="/kenroll" element={<Rickroll />}></Route> */}
+        <Route path='/*' element={<Decoy />}></Route>
       </Routes>
-      <Decoy>
-      </Decoy>
     </Router>
     </>
   )

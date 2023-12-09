@@ -1,12 +1,12 @@
 import React from 'react'
-import './DailyImages.css'
+import DailyRyan from '../assets/itznct_ryan_gosling_as_jesus_45980ae7-12b1-48c4-8591-a340065b712f.webp'
+// import './DailyImages.css'
 
 const DailyImages = () => {
   return (
     <>
     <h2>Daily Ryan Gosling for Your Soul</h2>
-    <div id='daily-image'>
-    </div>
+    <img src={DailyRyan} style={{ width: '50%' }}></img>
     <p>&quot;There&apos;s good things about going to church.&quot; - Ryan</p>
     <h3>REJOICE</h3>
     </>
