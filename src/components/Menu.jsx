@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
   return (
@@ -9,7 +10,9 @@ const Menu = () => {
         <h4 style={{ margin: '0px' }}>Ryan GODling</h4>
       </div>
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', gap: '2em' }}>
-        <div>About Ryan Gosling (our God)</div>
+        <Link>
+          About Ryan Gosling (our God)
+        </Link>
         <div>Ryan Gosling Prayers</div>
         <div>Daily GODling</div>
       </div>
