@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Captcha.css'
 import karen1 from '../assets/captchas/set1/161205.png'
 import karen2 from '../assets/captchas/set1/161253.png'
@@ -12,6 +13,7 @@ import liam4 from '../assets/captchas/set1/161550.png'
 
 const Captcha = () => {
   const [selectedImages, setSelectedImages] = React.useState([])
+  const navigate = useNavigate()
 
   React.useEffect(() => {
     const shuffledOrder = shuffleArray(imageOrder)
@@ -28,15 +30,20 @@ const Captcha = () => {
   }
 
   const checkSelection = () => {
-    if (selectedImages.length !== 4) {
-      window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    }
+    let correctImages = 0
     selectedImages.forEach((image) => {
-      if (!image.includes('liam')) {
-        window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+      if (image.includes('liam')) {
+        correctImages++
       }
     })
-    window.location.replace('/flying-gosling')
+
+    if (correctImages === 4) {
+      navigate('/flying-gosling')
+      correctImages = 0
+    } else {
+      window.location.href = 'https://www.youtube.com/watch?v=8m24UmeyFkQ'
+      correctImages = 0
+    }
   }
 
   const [imageOrder, setImageOrder] = React.useState([

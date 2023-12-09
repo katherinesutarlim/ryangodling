@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './CopypastaForm.css'
 
 const CopypastaForm = () => {
@@ -61,6 +62,8 @@ const CopypastaForm = () => {
 
   const [results, setResults] = useState(null)
 
+  const navigate = useNavigate()
+
   // Handle input change
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -79,6 +82,10 @@ const CopypastaForm = () => {
     const isAllCorrect = answerResults.every(result => result.correct)
     setAllCorrect(isAllCorrect)
     setResults(answerResults)
+
+    if (isAllCorrect) {
+      navigate('/kenroll')
+    }
   }
 
   return (
@@ -166,11 +173,9 @@ const CopypastaForm = () => {
             <button onClick={handleSubmit}>Submit</button>
 
             {allCorrect
-              ? (
-              <p>Congratulations! All answers are correct.<br/> <a href="/kenroll">You can proceed</a></p>)
-              : (
-                  results && <p>You have disappointed our Lord and Savior Godling.<br/> Better try again.</p>
-                )}
+              ? <p>Congratulations! All answers are correct.</p>
+              : results && <p>You have disappointed our Lord and Savior Godling.<br/> Better try again.</p>
+      }
         </div>
   )
 }
