@@ -24,7 +24,7 @@ const Footer = () => {
     if (nextIndex < popUpConfigs.length) {
       setCurrentPopUpIndex(nextIndex)
     } else {
-      navigate('/captcha') // Navigate when all pop-ups are done
+      navigate('/browser-check') // Navigate when all pop-ups are done
     }
   }
 
