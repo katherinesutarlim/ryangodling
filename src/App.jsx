@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import Homepage from './components/Homepage'
 import Menu from './components/Menu'
 import Popup from './components/Popup'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './components/About'
 
 // https://r4.wallpaperflare.com/wallpaper/458/677/100/blade-runner-blade-runner-2049-cyberpunk-ryan-gosling-movies-hd-wallpaper-6a1327b9d7a2c86edd68674ed8239c54.jpg
