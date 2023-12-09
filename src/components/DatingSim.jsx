@@ -22,7 +22,7 @@ function DatingSim () {
                             if (goodCount < 2) {
                               window.location.href = 'https://www.youtube.com/watch?v=8m24UmeyFkQ' // I'm just Ken video
                             } else {
-                              window.location.href = 'http://localhost:3000/impostor' // Map
+                              window.location.href = '/impostor' // Map
                             }
                           }
                         }}>Next ›</a>
