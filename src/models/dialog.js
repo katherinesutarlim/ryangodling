@@ -76,14 +76,82 @@ export const dialog = [
     type: 'choice',
     choices: [
       {
-        text: 'Yes',
+        text: 'Say yes',
         route: 'yes',
         good: true
       },
       {
-        text: 'No',
+        text: 'Say no',
         route: 'no'
       }
     ]
+  },
+  {
+    type: 'response',
+    character: 'Ryan Gosling',
+    text: {
+      yes: 'You dare question the sanctity of our bond? Am I not KENough for you? Your insolence borders on sacrilege, yet I shall remain patient, urging you to reflect on the gravity of your words.',
+      no: 'Fear not, devoted one, for the path of devotion is not always a straight line. Your commitment is seen, and your spirit acknowledged. Let the light of our shared purpose guide you as we continue our journey together.'
+    }
+  },
+  {
+    type: 'dialog',
+    character: 'Ryan Gosling',
+    text: 'Why would you want to leave? Here, you are among the chosen ones. A family. We worship the divine, and I am its conduit. Stay, and you shall ascend as a beloved Gosling child.'
+  },
+  {
+    type: 'choice',
+    choices: [
+      {
+        text: 'Say that Ryan Gosling is ugly and Barbie would never date him',
+        route: 'insult',
+        good: true
+      },
+      {
+        text: 'Question the monetary value of subscribing',
+        route: 'question',
+        good: true
+      },
+      {
+        text: 'Admit that you feel unworthy of his godlike, sexy presence *kiss kiss*',
+        route: 'repent'
+      }
+    ]
+  },
+  {
+    type: 'response',
+    character: 'Ryan Gosling',
+    text: {
+      insult: 'Y-you! My patience is growing thin, yet I still value you as a member. And it\'s not gonna be easy for you and me. It\'s going to be really hard. We\'re gonna have to work at this every day, but I want to do that because I want you. I want all of you, forever. You and me, every day.',
+      question: 'Why, within the folds of our subscription, you are not merely a subscriber; you are a cherished member of a community bound by shared reverence for the enigmatic allure of our beloved leader. It\'s not gonna be easy to pay for my hallowed subscription. It\'s going to be really hard. We\'re gonna have to work at this every day, but I want to do that because I want you. I want all of you, forever. You and me, every day.',
+      repent: 'Well, I must admit, it\'s not gonna be easy. It\'s going to be really hard. We\'re gonna have to work at this every day, but I want to do that because I want you. I want all of you, forever. You and me, every day.'
+    }
+  },
+  {
+    type: 'dialog',
+    character: 'Ryan Gosling',
+    text: 'Do you believe in me, my darling gosling?'
+  },
+  {
+    type: 'choice',
+    choices: [
+      {
+        text: 'Projectile vomit at Ryan Gosling',
+        route: 'no',
+        good: true
+      },
+      {
+        text: 'Kiss Ryan Gosling\'s feet and say yes',
+        route: 'yes'
+      }
+    ]
+  },
+  {
+    type: 'response',
+    character: 'Ryan Gosling',
+    text: {
+      no: 'YOU WILL REGRET THIS! YOU WILL REGRET LEAVING THE MOJO DOJO CASA HOUSE!',
+      yes: 'My child. You are making the right decision. Now, join me as we sing to our holy tunes.'
+    }
   }
 ]

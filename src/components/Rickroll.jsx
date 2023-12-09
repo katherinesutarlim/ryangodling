@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Rickroll.css'
 
 const Rickroll = () => {
   const totalLinks = 12
   const [correctLink, setCorrectLink] = useState(null)
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const elements = document.querySelectorAll('.link-button')
@@ -23,14 +26,14 @@ const Rickroll = () => {
 
   const handleLinkClick = (linkId) => {
     if (linkId === correctLink) {
-      window.location.href = '/dating' // next section
+      navigate('/dating') // next section
     } else {
       window.location.href = 'https://www.youtube.com/watch?v=8m24UmeyFkQ' // I'm just Ken video
     }
   }
 
   return (
-        <div className='rickroll'>
+        <div id="rickroll">
             {[...Array(totalLinks).keys()].map(linkId => (
                 <button className='link-button' key={linkId} onClick={() => handleLinkClick(linkId)}>
                 </button>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Captcha.css'
 import karen1 from '../assets/captchas/set1/161205.png'
 import karen2 from '../assets/captchas/set1/161253.png'
@@ -12,6 +13,7 @@ import liam4 from '../assets/captchas/set1/161550.png'
 
 const Captcha = () => {
   const [selectedImages, setSelectedImages] = React.useState([])
+  const navigate = useNavigate()
 
   React.useEffect(() => {
     const shuffledOrder = shuffleArray(imageOrder)
@@ -28,15 +30,17 @@ const Captcha = () => {
   }
 
   const checkSelection = () => {
+    let correct = true
     if (selectedImages.length !== 4) {
-      window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+      correct = false
     }
     selectedImages.forEach((image) => {
       if (!image.includes('liam')) {
-        window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+        correct = false
       }
     })
-    window.location.replace('/flying-gosling')
+
+    correct ? navigate('/flying-gosling') : window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
   }
 
   const [imageOrder, setImageOrder] = React.useState([
@@ -63,6 +67,7 @@ const Captcha = () => {
   return (
     <>
     <div className="captcha-container">
+      <h2 style={{ color: 'black' }} >Are you a robot?</h2>
       <h2 style={{ color: 'black' }} >Select all images of Liam Hemsworth:</h2>
       <div className="image-grid">
         {imageOrder.map((image) => (
