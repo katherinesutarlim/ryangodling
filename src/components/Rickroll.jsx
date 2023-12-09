@@ -23,7 +23,7 @@ const Rickroll = () => {
 
   const handleLinkClick = (linkId) => {
     if (linkId === correctLink) {
-      window.location.href = 'https://www.google.com/' // Put the next section here. Placeholder is Google search
+      window.location.href = '/dating' // next section
     } else {
       window.location.href = 'https://www.youtube.com/watch?v=8m24UmeyFkQ' // I'm just Ken video
     }

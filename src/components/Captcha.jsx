@@ -36,7 +36,7 @@ const Captcha = () => {
         window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
       }
     })
-    console.log(selectedImages)
+    window.location.replace('/flying-gosling')
   }
 
   const [imageOrder, setImageOrder] = React.useState([

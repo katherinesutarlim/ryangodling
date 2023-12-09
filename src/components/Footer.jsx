@@ -42,6 +42,7 @@ const Footer = () => {
         >
           Unsubscribe
         </button>
+        <a href='/save-paul'>Our values</a>
       </div>
 
       {currentPopUpIndex !== null && (
