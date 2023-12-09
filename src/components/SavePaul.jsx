@@ -7,7 +7,7 @@ const setOnFire = (paragraph) => {
   if (paragraph.length < 5) {
     randomQuantity = Math.floor(Math.random() * paragraph.length)
   } else {
-    randomQuantity = Math.floor(Math.random() * 3)
+    randomQuantity = Math.floor(Math.random() * 5)
   }
   for (let i = 0; i < randomQuantity; i++) {
     const randomIndex = Math.floor(Math.random() * paragraph.length)
