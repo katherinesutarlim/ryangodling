@@ -134,11 +134,13 @@ export const dialog = [
   },
   {
     type: 'choice',
+    final: true,
     choices: [
       {
         text: 'Projectile vomit at Ryan Gosling',
         route: 'no',
-        good: true
+        good: true,
+        requireGood: true
       },
       {
         text: 'Kiss Ryan Gosling\'s feet and say yes',
