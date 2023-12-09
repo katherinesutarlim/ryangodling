@@ -1,0 +1,62 @@
+.dating-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/monika-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: aliceblue; */
+}
+
+.dating-container img {
+    height: 90vh;
+    position: absolute;
+    right: 5vh;
+    bottom: 0;
+}
+
+.dialogue-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 108px;
+    padding: 12px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogue-container p {
+    flex:1;
+    margin: 0;
+}
+
+.dialogue-footer {
+    height: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next-button {
+    color: white;
+    margin-right: 24px;
+}
+
+.choices-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices-container a {
+    background-color: rgba(0,0,0,0.5);
+    width: 95%;
+    text-align: center;
+    margin: 6px;
+}

@@ -8,6 +8,8 @@ import DailyImages from './DailyImages'
 import Footer from './Footer'
 import SavePaul from './SavePaul'
 import Amogus from './Amogus'
+import DatingSim from './DatingSim'
+import Map from './Map'
 
 const Decoy = () => {
   const [isPopupOpen, setPopupOpen] = React.useState(true)
@@ -76,6 +78,8 @@ const Decoy = () => {
           <Route path="/daily" element={<DailyImages />} />
           <Route path="/savePaul" element={<SavePaul />} />
           <Route path="/amoogus" element={<Amogus />} />
+          <Route path="/impostor" element={<Map />} />
+          <Route path="/ddlc" element={<DatingSim />} />
         </Routes>
       </div>
       <Footer>

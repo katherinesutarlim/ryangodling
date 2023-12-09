@@ -1,0 +1,204 @@
+Title: "The Divine Persuasion"
+
+INT. SECRET CULT HEADQUARTERS - NIGHT
+
+The room is dimly lit, adorned with mysterious symbols and candles. Ryan Gosling, dressed in a charismatic yet enigmatic outfit, addresses a concerned follower, EMMA, who contemplates leaving the cult.
+
+RYAN GOSLING
+Emma, my dear disciple, I sense a disturbance in your soul. What troubles you?
+
+{
+    type: dialog
+    character: Ryan Gosling/reader,
+    text: Emma, my dear disciple, I sense a disturbance in your soul. What troubles you?
+}
+or if choice 
+{
+    type: choice
+    choices: [
+        {
+            text: ....
+            route: good/bad
+        }
+    ]
+}
+
+EMMA
+Ryan, I've been thinking. I don't know if I can continue down this path. There are doubts in my mind.
+
+RYAN GOSLING
+(smirking) Doubt is the birthplace of enlightenment, my friend. But tell me, what's troubling your beautiful mind?
+
+EMMA
+It's just... I thought this cult would bring me purpose, but lately, it feels like we're following you blindly. What if we're being led astray?
+
+RYAN GOSLING
+(leaning in) Emma, my sweet disciple, you must understand. Our journey is not about blindly following. It's about discovering the divine within ourselves. I am merely a vessel, a guide.
+
+EMMA
+But you proclaim yourself as a god. What if you're wrong? What if we're all wrong?
+
+RYAN GOSLING
+(smiling confidently) Emma, have you forgotten the lessons from our sacred filmography? In "Blade Runner 2049," I portrayed a man in search of his identity. Our cult is a quest for self-discovery, just like that character.
+
+EMMA
+But that character wasn't a god.
+
+RYAN GOSLING
+(raising an eyebrow) Isn't he, though? The power to shape destinies, to challenge the very fabric of reality – that's god-like, don't you think? And just like him, I'm here to guide you towards your own godhood.
+
+EMMA
+I don't know, Ryan. It feels like we're losing touch with reality.
+
+RYAN GOSLING
+(smirking) Reality, my dear Emma, is merely a construct. In "The Matrix," I taught you to question what you perceive. Our reality is what we make of it, and in this cult, we craft our own destinies.
+
+EMMA
+I'm scared, Ryan. What if I make the wrong choice?
+
+RYAN GOSLING
+(gentle tone) Fear is the enemy, Emma. In "Drive," my character faced danger without flinching. You must embrace the unknown. The cult is your journey, and I am here to guide you, not control you.
+
+EMMA
+(softening) I just want to find meaning, Ryan.
+
+RYAN GOSLING
+And you will, my dear. Within the cult, you'll find the meaning you seek. Our path is unconventional, but so is greatness. Stay with us, and together, we shall ascend to divinity.
+
+Emma hesitates, caught in the charismatic allure of Ryan Gosling's words.
+
+Will Emma choose to stay and continue her journey within the cult, or will she break free from the enigmatic influence of Ryan Gosling? The choice is hers to make.
+User
+Can you make it as if it's a dating simulator with multiple choices from the reader?
+2 / 2
+ChatGPT
+
+Title: "Divine Hearts: A Gosling Cult Dating Simulator"
+
+INT. SECRET CULT HEADQUARTERS - NIGHT
+
+The room is dimly lit, adorned with mysterious symbols and candles. Ryan Gosling, dressed in a charismatic yet enigmatic outfit, addresses a concerned follower, EMMA, who contemplates leaving the cult.
+
+RYAN GOSLING
+Emma, my dear disciple, I sense a disturbance in your soul. What troubles you?
+
+EMMA
+
+    (Confess your doubts) Ryan, I've been thinking. I don't know if I can continue down this path. There are doubts in my mind.
+
+    (Express curiosity) Ryan, I've been pondering our journey. Can you share more about the path we're on?
+
+    (Flirt) Ryan, your divine presence always intrigues me. Can we focus on something else?
+
+RYAN GOSLING
+
+    (Encourage reflection) Doubt is the birthplace of enlightenment, my friend. But tell me, what's troubling your beautiful mind?
+
+    (Mystical explanation) Emma, my sweet disciple, our journey is not about blindly following. It's about discovering the divine within ourselves. I am merely a vessel, a guide.
+
+    (Playful response) Ah, the mysteries of the cosmos. But, my dear, there's more to life than just questions. What's on your mind?
+
+EMMA
+
+    (Express concern) It's just... I thought this cult would bring me purpose, but lately, it feels like we're following you blindly. What if we're being led astray?
+
+    (Seek guidance) Ryan, can you help me find my purpose within this cult? I feel lost.
+
+    (Change the topic) Ryan, let's talk about us. What does the future hold for you and me?
+
+RYAN GOSLING
+
+    (Confidently reassure) Emma, have you forgotten the lessons from our sacred filmography? In "Blade Runner 2049," I portrayed a man in search of his identity. Our cult is a quest for self-discovery, just like that character.
+
+    (Empathetic response) But of course, Emma. The path to purpose is unique for each of us. Let me guide you towards your own divine calling.
+
+    (Flirtatious tease) Ah, the future, a mysterious landscape. Let's focus on the present, my dear. Our connection is what matters now.
+
+EMMA
+
+    (Question the analogy) But that character wasn't a god.
+
+    (Curious) What does "divine calling" mean for me, Ryan?
+
+    (Play along) You're right, Ryan. Our reality is what we make of it. So, what reality are we crafting together?
+
+RYAN GOSLING
+
+    (Philosophical twist) Isn't he, though? The power to shape destinies, to challenge the very fabric of reality – that's god-like, don't you think? And just like him, I'm here to guide you towards your own godhood.
+
+    (Guiding hand) Your divine calling is the purpose that resonates with your soul. Let's explore it together, shall we?
+
+    (Enigmatic response) Ah, the reality we create, Emma. It's a journey we embark on together. Care to explore it with me?
+
+EMMA
+
+    (Express fear) I don't know, Ryan. It feels like we're losing touch with reality.
+
+    (Seek reassurance) Ryan, I'm scared. Can you assure me that this journey is worth it?
+
+    (Confident response) Fear is just an illusion, Ryan. Let's face the unknown together.
+
+RYAN GOSLING
+
+    (Reassuring) Fear is the enemy, Emma. In "Drive," my character faced danger without flinching. You must embrace the unknown. The cult is your journey, and I am here to guide you, not control you.
+
+    (Reassuring) Emma, my dear, the unknown is where true greatness lies. Stay with us, and together, we shall ascend to divinity.
+
+    (Playful encouragement) Ah, the unknown, a canvas waiting to be painted. Together, we'll create a masterpiece. Stay with me, Emma.
+
+Emma hesitates, contemplating her choices in this divine dating simulator. The cult's journey and her connection with Ryan Gosling await her decision.
+User
+Can you continue?
+ChatGPT
+
+EMMA
+
+    (Softening) I just want to find meaning, Ryan.
+
+    (Curious) How will staying with the cult help me find the meaning I seek?
+
+    (Express vulnerability) Ryan, I want to believe in this journey. Can you show me the way?
+
+RYAN GOSLING
+
+    (Gentle tone) And you will, my dear. Within the cult, you'll find the meaning you seek. Our path is unconventional, but so is greatness. Stay with us, and together, we shall ascend to divinity.
+
+    (Mysterious assurance) Ah, the meaning you seek is woven into the fabric of our journey. Stay with me, and you'll uncover it, layer by layer.
+
+    (Guiding hand) Emma, your desire for meaning is the compass of your soul. Let me be the North Star that guides you through the cosmos. Stay, and the path will reveal itself.
+
+Emma, caught in the enigmatic allure of Ryan Gosling's words, contemplates her final decision.
+
+EMMA
+
+    (Resolve) I'll stay, Ryan. Guide me on this journey of self-discovery.
+
+    (Inquisitive) I'm intrigued, Ryan. I'll stay a little longer, but I need more clarity on our path.
+
+    (Hesitant) I... I need time, Ryan. I'm not sure if I'm ready for this.
+
+RYAN GOSLING
+
+    (Satisfied) Excellent choice, Emma. Together, we shall walk the path of enlightenment.
+
+    (Understanding) Take your time, Emma. The journey unfolds at its own pace. I'll be here when you're ready for more revelations.
+
+    (Gentle encouragement) Time is but an illusion, Emma. When you're ready, the path will be here. Until then, may the mysteries of the cosmos guide your heart.
+
+As Emma makes her choice, the dating simulator unfolds, leaving the door open for her to explore the mysteries of the cult and the charismatic presence of Ryan Gosling.
+User
+Can you tell it have two options where Ryan Gosling lets you leave a cult or forces you to stay in the cult?
+2 / 2
+ChatGPT
+
+EMMA
+
+    (Assertive) Ryan, I appreciate everything, but I need to leave. I have to find my own path.
+
+    (Plead) Ryan, I'm not sure about this. Can I leave the cult, just for a while, to clear my head?
+
+RYAN GOSLING
+
+    (Respectful acceptance) Emma, I understand. Your journey is yours to navigate. Should you ever seek the path again, the cult's doors will remain open.
+
+    (Concerned insistence) Emma, the journey is one of commitment. Leaving, even temporarily, might disrupt the cosmic balance. Are you sure about this decision?
