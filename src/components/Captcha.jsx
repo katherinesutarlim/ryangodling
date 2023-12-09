@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Captcha.css'
 import karen1 from '../assets/captchas/set1/161205.png'
 import karen2 from '../assets/captchas/set1/161253.png'
@@ -12,6 +13,7 @@ import liam4 from '../assets/captchas/set1/161550.png'
 
 const Captcha = () => {
   const [selectedImages, setSelectedImages] = React.useState([])
+  const navigate = useNavigate()
 
   React.useEffect(() => {
     const shuffledOrder = shuffleArray(imageOrder)

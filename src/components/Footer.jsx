@@ -32,17 +32,26 @@ const Footer = () => {
     setCurrentPopUpIndex(null) // Close pop-up
   }
 
+  const handleValuesClick = () => {
+    navigate('/save-paul')
+  }
+
   return (
     <>
       <div style={{ display: 'flex', flexDirection: 'row-reverse', justifyContent: 'right', alignItems: 'center', gap: '1em' }}>
         <p>Hayden S. sucks 2023 © </p>
         <button
-          style={{ fontSize: '12px', color: '#551A8B', backgroundColor: 'transparent', border: 'none', cursor: 'pointer' }}
+          style={{ fontSize: '10px', color: '#551A8B', backgroundColor: 'transparent', border: 'none', cursor: 'pointer' }}
           onClick={handleUnsubscribeClick}
         >
           Unsubscribe
         </button>
-        <a href='/save-paul'>Our values</a>
+        <button
+          style={{ fontSize: '20px', color: 'white', backgroundColor: 'transparent', border: 'none', cursor: 'pointer' }}
+          onClick={handleValuesClick}
+        >
+          Our values
+        </button>
       </div>
 
       {currentPopUpIndex !== null && (
