@@ -1,0 +1,18 @@
+.proceed-message a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: purple;
+    text-decoration: underline;
+    background-color: transparent;
+    height: 30vh;
+    font-size: 100px;
+}
+
+.proceed-message p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    font-size: 100px;
+}

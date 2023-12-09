@@ -11,6 +11,7 @@ import SavePaul from './components/SavePaul'
 import Amogus from './components/Amogus'
 import Rickroll from './components/Rickroll'
 import Map from './components/Map'
+import BrowserCheck from './components/BrowserCheck'
 
 // https://r4.wallpaperflare.com/wallpaper/458/677/100/blade-runner-blade-runner-2049-cyberpunk-ryan-gosling-movies-hd-wallpaper-6a1327b9d7a2c86edd68674ed8239c54.jpg
 
@@ -19,6 +20,7 @@ function App () {
     <>
     <Router>
       <Routes>
+        <Route path="/browser-check" element={<BrowserCheck />}></Route>
         <Route path="/captcha" element={<Captcha />}></Route>
         <Route path="/form" element={<CopypastaForm />}></Route>
         <Route path="/flying-gosling" element={<FlyingGoslingGame />}></Route>
