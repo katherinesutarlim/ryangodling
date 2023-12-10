@@ -11,7 +11,6 @@ function Amogus () {
   React.useEffect(() => {
     localStorage.setItem('isSubscribed', false)
     const timeoutId = setTimeout(() => {
-      console.log('imma do a little trolling')
       setPopupOpen(true)
     }, 15000)
     return () => clearTimeout(timeoutId)
