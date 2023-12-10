@@ -38,7 +38,7 @@ const Footer = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'row-reverse', justifyContent: 'right', alignItems: 'center', gap: '1em', marginRight: '20px' }}>
+      <div style={{ display: 'flex', flexDirection: 'row-reverse', justifyContent: 'right', alignItems: 'center', gap: '1em', marginRight: '50px' }}>
         <p>Hayden S. sucks 2023 © </p>
         {/* <button
           style={{ fontSize: '20px', color: 'white', backgroundColor: 'transparent', border: 'none', cursor: 'pointer' }}

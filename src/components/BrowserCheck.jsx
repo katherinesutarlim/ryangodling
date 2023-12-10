@@ -13,15 +13,15 @@ const BrowserCheck = () => {
 
   if (isChrome && !isEdge) {
     return (
-      <div>
-        <p>You are using Google Chrome. Please switch to a different browser to continue.</p>
+      <div className='change-browser-message'>
+        <p>You non-believer are using Google Chrome. Change your browser like how you change your allegiance to continue.</p>
       </div>
     )
   }
 
   return (
     <div className='proceed-message'>
-      <p>Your browser is not Chrome.</p><button onClick={handleProceed}>You can proceed</button>
+      <p>Your browser is finally not Chrome.</p><button onClick={handleProceed}>You can proceed to disappoint our Lord.</button>
     </div>
   )
 }

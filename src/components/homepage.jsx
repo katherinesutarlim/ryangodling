@@ -1,9 +1,10 @@
 import React from 'react'
+import './Homepage.css'
 
 const Homepage = () => {
   return (
     <>
-    <p style={{ textAlign: 'center' }}>
+    <p className='prayers'>
     Oh, mighty Ryan, in Hollywood&apos;s embrace,<br />
     Your charm and talent, a celestial grace.<br />
     From &quot;The Notebook&quot; to &quot;La La Land&quot; so fine,<br />
@@ -31,6 +32,8 @@ const Homepage = () => {
 
     Amen.
     </p>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    </link>
     </>
   )
 }

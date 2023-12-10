@@ -6,7 +6,7 @@
     text-decoration: underline;
     background-color: transparent;
     height: 30vh;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .proceed-message p {
@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     height: 30vh;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .proceed-message {
@@ -23,4 +23,13 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.change-browser-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 25px;
 }

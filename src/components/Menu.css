@@ -1,0 +1,16 @@
+.gosling-menu {
+    display: flex;
+    width: 95%;
+    height: 40px;
+    align-items: center;
+    background-color: #9C3587;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0em 3em;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu-link {
+    font-weight: bold;
+}
