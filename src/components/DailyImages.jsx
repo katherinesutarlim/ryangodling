@@ -8,7 +8,7 @@ const DailyImages = () => {
     <h2>Daily Ryan Gosling for Your Soul</h2>
     <img src={DailyRyan} style={{ width: '75%' }}></img>
     <p>&quot;There&apos;s good things about going to church.&quot; - Ryan</p>
-    <h3>REJOICE</h3>
+    <h3>★彡Ṙ̻E͎̫̻͕͒͒̑̃̊͟J̙͌Ó͎̥͡Ĭ̢̜͝C̖̩̮̔̾͐́ͅE͎̫̻͕͒͒̑̃̊͟彡★</h3>
     </>
   )
 }

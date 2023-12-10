@@ -17,7 +17,7 @@ const Menu = () => {
         <Link className='menu-link' to="the-gospel">
           Our GOSpel
         </Link>
-        <div>Ryan Gosling Prayers</div>
+        {/* <div>Ryan Gosling Prayers</div> */}
         <Link className='menu-link' to="daily">
           Daily GODling
         </Link>

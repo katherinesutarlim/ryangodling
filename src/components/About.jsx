@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from '../assets/SW_Icons_Pale-Pink_Avatar.png'
+import './About.css'
 
 const About = () => {
   return (
@@ -50,15 +51,15 @@ const About = () => {
       </div>
       <div>
         <h1>Testimonials from Our Goslings</h1>
-        <div>
+        <div className='testimony'>
           <img src={Avatar} style={{ width: '50px', height: 'auto' }}/>
           <p>&quot;Ryan Gosling cured my crops and watered my acne&quot; - jlh</p>
         </div>
-        <div>
+        <div className='testimony'>
           <img src={Avatar} style={{ width: '50px', height: 'auto' }}/>
           <p>&quot;Ryan Gosling helped my cat get through college. 🐱/5 stars 🌟&quot; - Neeraj</p>
         </div>
-        <div>
+        <div className='testimony'>
           <img src={Avatar} style={{ width: '50px', height: 'auto' }}/>
           <p>&quot;I don&apos;t know him&quot; - Cleverbot</p>
         </div>

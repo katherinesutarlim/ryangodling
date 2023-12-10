@@ -15,7 +15,7 @@ const Popup = ({ isOpen, onClose }) => {
             <button style={{ color: 'black' }} onClick={onClose}><h1>Yes 🙌</h1></button>
           </div>
           <div style={{ display: 'flex', justifyContent: 'right' }}>
-            <p style={{ fontSize: '5px' }}>* Terms and conditions apply.</p>
+            <p style={{ fontSize: '5px' }}>* Terms and conditions apply. Upon subscription, the price increases by 5% per day.</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,6 @@
+.testimony {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    flex-direction: column;
+}

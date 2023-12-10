@@ -43,6 +43,9 @@ const Decoy = () => {
     const isSubscribed = localStorage.getItem('isSubscribed')
     if (isSubscribed) {
       setPopupOpen(false)
+      if (isSubscribed === 'false') {
+        setPopupOpen(true)
+      }
     } else {
       setPopupOpen(true)
     }
@@ -56,7 +59,7 @@ const Decoy = () => {
     checkSubscribed()
     const url = window.location.href
 
-    if (url.includes('about') || url.includes('daily')) {
+    if (url.includes('about') || url.includes('daily') || url.includes('gospel')) {
       scrollToBody()
     } else {
       scrollToTop()
