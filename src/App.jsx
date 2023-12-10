@@ -7,7 +7,7 @@ import Captcha from './components/Captcha'
 import FlyingGoslingGame from './components/FlyingGoslingGame'
 import CopypastaForm from './components/CopypastaForm'
 import DatingSim from './components/DatingSim'
-import SavePaul from './components/SavePaul'
+// import SavePaul from './components/SavePaul'
 import Amogus from './components/Amogus'
 import Rickroll from './components/Rickroll'
 import Map from './components/Map'
@@ -24,7 +24,7 @@ function App () {
         <Route path="/captcha" element={<Captcha />}></Route>
         <Route path="/form" element={<CopypastaForm />}></Route>
         <Route path="/flying-gosling" element={<FlyingGoslingGame />}></Route>
-        <Route path="/save-paul" element={<SavePaul />}></Route>
+        {/* <Route path="/save-paul" element={<SavePaul />}></Route> */}
         <Route path="/amoogus" element={<Amogus />}></Route>
         <Route path="/impostor" element={<Map />}></Route>
         <Route path="/kenroll" element={<Rickroll />}></Route>

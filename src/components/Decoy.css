@@ -4,6 +4,11 @@ button {
   background-color: transparent;
   border: none;
 }
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+}
   
 #hero-image {
   background-image: url(../assets/hero-image.png);

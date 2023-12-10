@@ -68,7 +68,8 @@ function SavePaul () {
 
   return (
     <div className="save-paul">
-      <h1>Our Values</h1>
+      <header className="App-header" />
+      <h1>Our GOSpel</h1>
         {!lose && !win && (
           <>
             <p>Our sigma community focuses on the importance of self-growth, emphasizing personal development and improvement. Within our community, individuals strive to enhance their own skills, talents, and knowledge, all while worshipping our lord and saviour. The concept of self-growth is a central pillar, {paulParagraph1.map((letter, index) => {

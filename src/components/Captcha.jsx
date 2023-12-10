@@ -67,7 +67,7 @@ const Captcha = () => {
   return (
     <>
     <div className="captcha-container">
-      <h2 style={{ color: 'black' }} >Are you a robot?</h2>
+      <h2 style={{ color: 'black' }} >Verify that you are not a robot.</h2>
       <h2 style={{ color: 'black' }} >Select all images of Liam Hemsworth:</h2>
       <div className="image-grid">
         {imageOrder.map((image) => (
