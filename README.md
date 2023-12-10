@@ -13,3 +13,6 @@ The assets (images for the minigames) mainly comes from the Internet, most of wh
 # Tech Stack
 The entire website is designed in ReactJS.
 
+# Website
+You can find the main website [here](https://katherinesutarlim.github.io/ryangodling/)
+
