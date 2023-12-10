@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './SavePaul.css'
 import { paulParagraph1 } from '../models/paulParagraph'
+import { Link } from 'react-router-dom'
 
 const spreadFire = (randomIndexes) => {
   return randomIndexes.map(id => id + 1)
@@ -104,7 +105,7 @@ function SavePaul () {
           (
           <>
             <h1>GG 🐔</h1>
-            <a href='/impostor'>You may proceed</a>
+            <Link to='/impostor'>You may proceed</Link>
           </>
           )}
     </div>
