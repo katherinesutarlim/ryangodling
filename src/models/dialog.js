@@ -151,7 +151,7 @@ export const dialog = [
     character: 'Ryan Gosling',
     text: {
       no: 'YOU WILL REGRET THIS! YOU WILL REGRET LEAVING THE MOJO DOJO CASA HOUSE!',
-      yes: 'My child. You are making the right decision. Now, join me as we sing to our holy tunes.'
+      yes: 'My child. You are making the right decision. Now, join me as we sing to our holy melody.'
     }
   }
 ]

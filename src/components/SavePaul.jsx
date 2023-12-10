@@ -72,6 +72,7 @@ function SavePaul () {
   return (
     <div className="App">
       <header className="App-header">
+      <h1>Our GOSpel</h1>
         {!lose && !win && (
           <p>{paragraph1.map((letter, index) => {
             if (letter === '🔥') {
