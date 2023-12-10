@@ -14,3 +14,6 @@ The assets (images for the minigames) mainly comes from the Internet, most of wh
 
 # Tech Stack
 The entire website is designed in ReactJS.
+
+### Hint for the final part
+The codes are for school buildings of UNSW, except for the first one which refers to a building at USYD.
