@@ -48,6 +48,9 @@ html {
 .dialogue-container p {
     flex:1;
     margin: 8px 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 20px;
 }
 
 .dialogue-footer {
@@ -56,6 +59,7 @@ html {
     flex-direction: row;
     justify-content: flex-end;
     margin-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .next-button {
@@ -63,6 +67,7 @@ html {
     margin-right: 24px;
     width: fit-content;
     text-align: right;
+    font-size: 20px;
 }
 
 .choices-container {
