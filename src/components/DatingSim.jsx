@@ -27,6 +27,7 @@ function DatingSim () {
                               navigate('/impostor') // Map
                             } else {
                               window.location.href = 'https://www.youtube.com/watch?v=8m24UmeyFkQ' // I'm just Ken video
+                              window.history.pushState({}, '', '/*')
                             }
                           }
                         }}>Next ›</a>
