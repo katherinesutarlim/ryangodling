@@ -3,6 +3,8 @@ This project is based on the idea that most subscribtions for services are very 
 
 The product to be subscribed would be a subscribtion to Ryan Gosling or, as we call him, Ryan Godling. To unsubscribe from him, you, as mentioned, would face a series of ordeals to reach your final destination - cancelling the subscribtion.
 
+You can find the main website [here](https://katherinesutarlim.github.io/ryangodling/)
+
 # Credit
 This project is designed for the Terrible Ideas Hackathon - Sydney branch. You can visit the website [here](https://terriblehack.com/events/syd/).
 
@@ -12,7 +14,3 @@ The assets (images for the minigames) mainly comes from the Internet, most of wh
 
 # Tech Stack
 The entire website is designed in ReactJS.
-
-# Website
-You can find the main website [here](https://katherinesutarlim.github.io/ryangodling/)
-
