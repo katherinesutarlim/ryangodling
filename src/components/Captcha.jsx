@@ -18,18 +18,6 @@ const Captcha = () => {
   React.useEffect(() => {
     const shuffledOrder = shuffleArray(imageOrder)
     setImageOrder(shuffledOrder)
-
-    const handlePopstate = () => {
-      // Code to execute when the user navigates back
-      console.log('Navigated back')
-      // Trigger a rerender or update component state as needed
-    }
-
-    window.addEventListener('popstate', handlePopstate)
-
-    return () => {
-      window.removeEventListener('popstate', handlePopstate)
-    }
   }, [])
 
   const shuffleArray = (array) => {

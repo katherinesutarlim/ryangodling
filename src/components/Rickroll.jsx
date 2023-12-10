@@ -22,6 +22,19 @@ const Rickroll = () => {
 
   useEffect(() => {
     setCorrectLink(Math.floor(Math.random() * totalLinks))
+    const handlePopstate = () => {
+      // Perform actions to re-render or refresh the component
+      console.log('yes')
+      window.location.reload()
+    }
+
+    // Attach the event listener when the component mounts
+    window.addEventListener('popstate', handlePopstate)
+
+    // Detach the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('popstate', handlePopstate)
+    }
   }, [])
 
   const handleLinkClick = (linkId) => {
